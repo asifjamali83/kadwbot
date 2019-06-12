@@ -8,6 +8,95 @@ from humanfriendly import format_timespan, format_size, format_number, format_le
 import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib, urllib.parse
 from gtts import gTTS
 from googletrans import Translator
+from liff.ttypes import LiffChatContext, LiffContext, LiffSquareChatContext, LiffNoneContext, LiffViewRequest
+from akad.ttypes import Message
+from akad.ttypes import ContentType as Type
+from akad.ttypes import TalkException
+from datetime import datetime, timedelta
+from time import sleep
+from bs4 import BeautifulSoup as bSoup
+from bs4 import BeautifulSoup
+from humanfriendly import format_timespan, format_size, format_number, format_length
+from gtts import gTTS
+from threading import Thread
+from io import StringIO
+from multiprocessing import Pool
+from googletrans import Translator
+from urllib.parse import urlencode
+from tmp.MySplit import *
+from random import randint
+from shutil import copyfile
+from youtube_dl import YoutubeDL
+import subprocess, youtube_dl, humanize, traceback
+import subprocess as cmd
+import platform
+import requests, json
+import time, random, sys, json, null, pafy, codecs, html5lib ,shutil ,threading, glob, re, base64, string, os, requests, six, ast, pytz, wikipedia, urllib, urllib.parse, atexit, asyncio, traceback
+_session = requests.session()
+try:
+    import urllib.request as urllib2
+except ImportError:
+    import urllib2
+from io import BytesIO
+import os
+import socket
+import sys
+import warnings
+import base64
+import time
+from six.moves import urllib
+from six.moves import http_client
+import six
+from .TTransport import TTransportBase
+from __future__ import absolute_import
+import logging
+import socket
+import struct
+from .transport.TTransport import TTransportException, TTransportBase, TMemoryBuffer
+from io import BytesIO
+from collections import deque
+from contextlib import contextmanager
+from tornado import gen, iostream, ioloop, tcpserver, concurrent
+__all__ = ['TTornadoServer', 'TTornadoStreamTransport']
+import logging
+import select
+import socket
+import struct
+import threading
+from collections import deque
+from six.moves import queue
+from thrift.transport import TTransport
+from thrift.protocol.TBinaryProtocol import TBinaryProtocolFactory
+__all__ = ['TNonblockingServer']
+from os import path
+from SCons.Builder import Builder
+from six.moves import map
+from io import BytesIO
+import struct
+from zope.interface import implementer, Interface, Attribute
+from twisted.internet.protocol import ServerFactory, ClientFactory, connectionDone
+from twisted.internet import defer
+from twisted.internet.threads import deferToThread
+from twisted.protocols import basic
+from twisted.web import server, resource, http
+from thrift.transport import TTransport
+import errno
+from .TTransport import TTransportBase, TTransportException, TServerTransportBase
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+from __future__ import unicode_literals
+from thrift.Thrift import TType
+from multiprocessing import Process, Value, Condition
+from .TServer import TServer
+from thrift.transport.TTransport import TTransportException
+from six.moves import BaseHTTPServer
+from thrift.server import TServer
+from thrift.transport import TTransport
+from thrift.protocol import TBinaryProtocol
+from thrift.transport import TTransport
+#==============================================================================#
+
 #==============================================================================#
 botStart = time.time()
 
